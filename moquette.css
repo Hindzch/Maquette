@@ -1,0 +1,460 @@
+/* Réinitialisation des marges et paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Corps de la page */
+body {
+    font-family: Arial, sans-serif;
+    color: #5c5858; /* Texte gris pour tout le site */
+    
+        background-image: url('images/transparent.png'); 
+        background-size: cover; /* Ajuste l'image pour couvrir tout l'écran */
+        background-repeat: no-repeat; /* Empêche la répétition de l'image */
+   }
+
+/* Conteneur principal de l'en-tête (logo et menu) */
+.container-header {
+    display: flex;
+    justify-content: center; /* Centre le logo et les titres horizontalement */
+    align-items: center; /* Centre verticalement */
+    padding: 20px 50px;
+    position: relative;
+    
+    }
+    
+/* Logo */
+.logo {
+    display: flex;
+    align-items: center;
+    margin-right: 20px; /* Légère séparation entre le logo et les titres */
+}
+
+.logo img {
+    width: 150px; /* Taille du logo */
+    margin-right: 10px; /* Espacement entre le logo et le texte */
+}
+
+.logo span {
+    font-size: 28px;
+    font-weight: bold;
+    color: #555; /* Couleur gris pour le texte du logo */
+}
+
+/* Navigation des titres */
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   }
+
+/* Liste de titres */
+nav ul {
+    display: flex;
+    justify-content: space-between; /* Espace égal entre les éléments */
+    list-style: none;
+}
+
+nav ul li {
+    position: relative;
+    text-align: center; /* Centrer le texte et la ligne */
+    margin-left: 30px; /* Espacement entre les titres */
+   
+}
+
+/* Titre avec ligne colorée sous chaque élément */
+.title-line {
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 10px; /* Espace sous le titre */
+    color: #615f5f; /* Couleur gris pour les titres */
+    font-family: "Oswald", sans-serif;
+}
+/* Lignes colorées sous chaque titre */
+.title-line.hotels::after {
+    content: "";
+    display: block;
+    width: 60px; /* Largeur de la ligne */
+    height: 3px; /* Épaisseur de la ligne */
+    background-color: #FF6347; /* Couleur orange pour la section Hotels */
+    margin: 10px auto; /* Centre la ligne horizontalement */
+}
+
+.title-line.restaurants::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    background-color: #FFD700; 
+    margin: 10px auto;
+}
+
+.title-line.services::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    background-color: #32CD32;
+    margin: 10px auto;
+}
+
+.title-line.activities::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    background-color: #4682B4; 
+    margin: 10px auto;
+}
+
+.title-line.more::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    background-color: #8A2BE2; 
+    margin: 10px auto;
+}
+
+/* Liens sous chaque titre */
+.links a {
+    display: block;
+    text-decoration: none;
+    color: #aeb1af; /* Couleur gris pour les liens des titres*/
+    font-size: 14px;
+    margin-top: 5px; /* Espace entre les liens */
+}
+
+
+
+/* Contenu principal */
+.video-container {
+    text-align: center;
+    margin: 30px auto;
+}
+/* paragraph */
+.description {
+    text-align: center;
+    margin-top: 50px;
+    margin-left: 1px;
+    margin-right: -80px;
+    height: 60px;
+    font-size: 20px;
+    color: #767474; /* Texte en gris pour la description */
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+
+
+
+
+/* Réinitialisation des marges et paddings */
+
+
+/* Section principale */
+#content {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px auto;
+    max-width: 1000px; /* Largeur maximale de la page */
+    padding: 20px;
+    color: #79777b; /*color text dyal 3kolon*/
+}
+
+/* Première colonne : Golf */
+#golf {
+    width: 30%; /* Largeur de la première colonne */
+    
+    border: 1px solid #ddd; /* Bordure grise */
+    border-radius: 5px; /* Coins arrondis */
+    padding: 20px;
+   
+    text-align: center;
+}
+
+#golf h3 {
+    color:orange; /* Couleur du titre */
+    font-size: 30px;
+    margin-bottom: 10px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+#golf img {
+    max-width: 100%;
+    height: auto;
+    margin: 10px 0;
+}
+
+/* Deuxième colonne : Accrobranche et Fast Foods */
+#accrobranche-fastfood {
+    width: 35%; /* Largeur ajustée */
+    padding-left: 20px;
+   
+}
+
+#accrobranche, #fast-foods {
+    margin-bottom: 20px;
+}
+
+#accrobranche h3, #fast-foods h3 {
+    color: orange; /* Couleur des titres ACCROBRANCHE , FAST FOOD */
+    font-size: 30px;
+    margin-bottom: 10px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+/* Troisième colonne : Commentaires et Galerie */
+#avis-gallery {
+    width: 35%;
+    padding-left: 20px;
+    
+}
+
+#avis h3 {
+    color: orange; /*  color titre golf commantaire*/
+    font-size: 30px;
+    margin-bottom: 10px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+
+
+/* Section galerie */
+#gallery {
+    margin-top: 20px;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 colonnes égales */
+    gap: 10px;
+}
+
+.gallery-grid img {
+    max-width: 100%;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Ombre subtile */
+    padding: 10px; /* Ajout d'un padding pour encadrer les images */
+    transform: scale(1.2); /* Agrandit l'image à 120% */
+    transition: transform 0.3s ease; /* Animation fluide */
+}
+
+/* Supprimer le trait sous les liens "Lire Plus" */
+article.box a {
+    text-decoration: none;
+    color:orange;
+    font-weight: bold;
+    font-size: 30px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/* Style du trait horizontal */
+hr {
+    border: 0;
+    height: 1px;
+    background: #ddd;
+    margin: 20px 0;
+}
+
+h5 {
+    color: #cfd3d0; /*  dyal Change la couleur des titres*/
+    font-size: 14px; 
+    margin: 1px; /* pour Ajuster l'espacement */
+}
+
+
+
+
+
+/* pour le footer */
+.site-footer {
+    width: 45%; /* Largeur du footer */
+    margin: 0 auto; /* Centre horizontalement */
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    color: #6d6c6c; /* loun dyal text footer */
+    margin-top: 40px;
+    justify-content: center;
+    min-height: 150px; /* Hauteur minimale */
+    padding: 20px 0; /* Espace interne */
+   
+}
+
+.site-footer section {
+    display: inline-block;
+    width: 22%;
+    vertical-align: top;
+    margin-right: 2%;
+    margin-bottom: 30px; /* Ajoute un espacement sous chaque section du footer */
+}
+
+.site-footer section:last-child {
+    margin-right: 0;
+}
+
+.site-footer h3 {
+    font-size: 16px;
+    color: #8b8989;/* loun dayl les titres*/
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.site-footer ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.site-footer ul li {
+    margin-bottom: 5px;
+    line-height: 1.5;
+}
+
+.site-footer ul li img {  /* had section mt3l9a nous contact */
+    margin-right: 8px;
+    vertical-align: middle;
+    height: 16px;  
+    width: 16px;
+}
+
+.site-footer ul li a {
+    color: rgb(155, 152, 152); /* LOUN DYAL DOK émail */
+    text-decoration: none;
+}
+
+.site-footer ul li a:hover {
+    text-decoration: underline;
+}
+
+.footer-bottom {
+   display: flex;
+    margin-top: 1px;
+    padding-top: 1px;
+    flex: 1; /* Occupe l'espace à gauche */
+    justify-content: space-between; /* Les éléments se positionnent à gauche et à droite */
+    align-items: center; /* Aligne les éléments verticalement */
+    
+   
+}
+
+.footer-bottom p {
+   
+    font-size: 12px;
+    color:rgb(145, 142, 142);/*loun dyal p footer*/
+    flex: 1; /* paragragh Occupe l'espace à gauche */
+    height: 40px;
+    width: 40px;
+    
+}
+
+#social-media {
+    display: flex;
+    gap: 10px;
+    
+    justify-content: flex-end; /* Aligne les logos à droite */
+    gap: 10px; /* Espacement entre les icônes */
+    flex-shrink: 0; /* Les logos ne se réduisent pas */
+
+}
+
+#social-media a {
+    display: inline-block;
+}
+
+#social-media img {
+    height: 40px;
+    width: 40px;
+    transition: transform 0.2s ease-in-out;
+    
+}
+
+#social-media img:hover {
+    transform: scale(1.2);
+}
+
+
+
+
+/* Règle globale pour tous les <hr> */
+.full-width-line {
+    border: 0; 
+    height: 1px; 
+    background-color: #a4a3a3; 
+    margin: 20px 0; 
+    width: 100vw; 
+    position: relative; 
+    
+}
+
+hr {
+    border: 0; 
+    height: 1px; 
+    background-color: #a4a3a3;
+    width: 100vw; 
+    position: relative; 
+    left: 0; 
+}
+
+
+
+
+
+
+
+
+
+
+/* Pour les tablettes (écran ≤ 768px) */
+@media (max-width: 768px) {
+    .site-footer {
+        display: flex; /* Active flexbox */
+        flex-direction: column; /* Organise les sections en colonne */
+        align-items: center; /* Centre les éléments horizontalement */
+        text-align: center; /* Centre le texte */
+        padding: 20px; /* pr Ajoute de l'espace autour */
+    }
+
+    .site-footer section {
+        width: 100%; /* Chaque section occupe toute la largeur */
+        margin-bottom: 15px; /* Espacement entre les sections */
+    }
+
+    #social-media {
+        margin-top: 20px; /* Ajoute de l'espace au-dessus des icônes */
+    }
+}
+
+/* Pour les mobiles (écran ≤ 480px) */
+@media (max-width: 480px) {
+    .site-footer {
+        font-size: 12px; /* pr Réduit la taille du texte */
+        padding: 15px; /*  pr Réduit le padding général */
+    }
+
+    .site-footer section {
+        margin-bottom: 20px; /*  un espacement  entre les sections */
+    }
+
+    #social-media img {
+        width: 25px; /* Réduire la taille des icônes sociales */
+        height: 25px;
+    }
+
+    #social-media {
+        gap: 10px; /* pr Ajoute un espace constant entre les icônes */
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
